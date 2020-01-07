@@ -61,7 +61,7 @@ public class Login {
 		System.out.println("The Accueil page is opened");
 		btn_user.click(); 
 		System.out.println(Text.getText());
-		assertEquals("Ncdihg ACDIHG", Text.getText() );
+		assertEquals("Vcbegg ACBEGG", Text.getText() );
 		
 	}
 

@@ -11,7 +11,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;		
 
 @RunWith(Cucumber.class)				
-@CucumberOptions(features="D:\\WorkplaceS\\CucumberWithS\\src\\main\\java\\Features",tags="@login,@Frais", glue={"StepDefinition"},format = {"pretty", "html:target/html/"})	
+@CucumberOptions(features="D:\\WorkplaceS\\CucumberWithS\\src\\main\\java\\Features",tags="@login,@Cra", glue={"StepDefinition"},format = {"pretty", "html:target/html/"})	
 
 public class Runner {
 	

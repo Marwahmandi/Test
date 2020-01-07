@@ -14,6 +14,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import PageFactory.CRA;
 import PageFactory.Frais;
 import PageFactory.Login;
 import cucumber.api.java.en.Given;
@@ -86,6 +87,36 @@ public class Steps {
 	//	test = extent.createTest("the_new_frais_is_added", "the_new_frais_is_added");
 
 	}
+	
+	@Given("^je clique sur le widget cra à travers le bouton Remplir mon cra$")
+	public void je_clique_sur_le_widget_cra_à_travers_le_bouton_Remplir_mon_cra() throws Throwable {
+	 CRA cra=new CRA(driver);
+	 cra.je_clique_sur_le_widget_cra_à_travers_le_bouton_Remplir_mon_cra();
+	   
+	}
+
+	@When("^je saisie un commentaire$")
+	public void je_saisie_un_commentaire() throws Throwable {
+		 CRA cra=new CRA(driver);
+		 cra.je_saisie_un_commentaire();
+	  
+	}
+
+	@When("^je clique sur enregistrer$")
+	public void je_clique_sur_enregistrer() throws Throwable {
+		 CRA cra=new CRA(driver);
+		 cra.je_clique_sur_enregistrer();
+	    
+	}
+
+	@Then("^je vérifie que le commentaire a été ajouté$")
+	public void je_vérifie_que_le_commentaire_a_été_ajouté() throws Throwable {
+		 CRA cra=new CRA(driver);
+		 cra.je_vérifie_que_le_commentaire_a_été_ajouté();
+	   
+	}
+
+
 
 	
 	//	extent.flush();
